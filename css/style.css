@@ -1,2 +1,11 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 header, footer {
-  background: #fdca30; }
+  background: #fdca30;
+  padding: 2rem; }
+
+h2 em {
+  color: #fdca30;
+  text-decoration: underline; }

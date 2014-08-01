@@ -1,8 +1,29 @@
 //Colour
 $yellow: #fdca30;
 
-//Font
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+//////////////////////
+
 
 header, footer{
 	background: $yellow;
+	padding: 2rem;
+}
+
+
+h1{
+	
+}
+
+h2{
+	em{
+		color: $yellow;
+		text-decoration: underline;
+	}
 }
