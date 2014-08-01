@@ -10,6 +10,11 @@ header h2 {
   bottom: -2rem;
   position: relative; }
 
-h2 em {
-  color: #fdca30;
-  text-decoration: underline; }
+h1 {
+  font-size: 5rem; }
+
+h2 {
+  font-size: 4rem; }
+  h2 em {
+    color: #fdca30;
+    text-decoration: underline; }
