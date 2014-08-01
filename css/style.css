@@ -6,6 +6,10 @@ header, footer {
   background: #fdca30;
   padding: 2rem; }
 
+header h2 {
+  bottom: -2rem;
+  position: relative; }
+
 h2 em {
   color: #fdca30;
   text-decoration: underline; }
