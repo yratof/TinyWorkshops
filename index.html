@@ -47,6 +47,10 @@
 body {
   background: #fdca30; }
 
+header, footer, section {
+  max-width: 1000px;
+  margin: 0 auto; }
+
 header, footer {
   background: #fdca30;
   padding: 2rem; }
@@ -74,6 +78,7 @@ h2 {
     text-decoration: underline; }
 
 input {
+  font-family: "brandon-grotesque",sans-serif;
   top: -2.5rem;
   position: relative;
   width: 60%;
@@ -98,7 +103,7 @@ input {
 		function fontFollow(shit, poop){
 			// Pick the width of something that you want to match.
 			// This is an image that we're matching up here.
-			var ratioWidth = $("body").outerWidth();
+			var ratioWidth = $("header").outerWidth();
 			// Divide the width into 100 tiny bits
 			// Work out the ratios from the font sizes in relation to the width
 			var hMath = (ratioWidth / 100) * 7;

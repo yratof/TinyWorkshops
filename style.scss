@@ -14,6 +14,10 @@ body{
 }
 //////////////////////
 
+header, footer, section {
+	max-width: 1000px;
+	margin: 0 auto;
+}
 
 header, footer {
 	background: $yellow;
@@ -59,7 +63,7 @@ h2{
 // INPUT
 
 input{
-
+	font-family: "brandon-grotesque",sans-serif;
 	top: -2.5rem;
 	position: relative;
 	width: 60%;
