@@ -43,6 +43,7 @@ footer{
 	}
 }
 
+
 ///
 
 h1{
@@ -62,8 +63,9 @@ h2{
 
 // INPUT
 
-input{
+input[type=email]{
 	font-family: "brandon-grotesque",sans-serif;
+	font-weight: 500;
 	top: -2.5rem;
 	position: relative;
 	width: 60%;
@@ -76,4 +78,26 @@ input{
 	font-size: 1.5rem;
 	font-weight: 300;
 	display: block;
+	box-sizing: border-box;
+}
+
+input[type=submit]{
+	visibility: hidden;
+}
+
+
+
+
+
+////////
+
+@media (max-width: 700px){
+	
+	header h2 { bottom: -2.85rem;}
+	footer h2 { top: -2.75rem;}
+	
+	h1 { font-size: 2rem; line-height: 1.2; }
+	h2 { font-size: 1.5rem; }
+	input[type=email]{width: 100%; top: 0; font-size: 1.15rem;}
+
 }
