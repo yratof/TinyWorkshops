@@ -48,7 +48,7 @@
 	<script type="text/javascript">
 	// use strict
 	jQuery(document).ready(function ($) {
-		enquire.register("screen and (min-width:700px)", function(){
+		enquire.register("screen and (min-width:700px) and (max-width: 1000px)", function(){
 			function fontFollow(shit, poop){
 				// Pick the width of something that you want to match.
 				// This is an image that we're matching up here.
@@ -56,7 +56,7 @@
 				// Divide the width into 100 tiny bits
 				// Work out the ratios from the font sizes in relation to the width
 				var hMath = (ratioWidth / 100) * 9;
-				var pMath = (ratioWidth / 100) * 8;
+				var pMath = (ratioWidth / 100) * 7;
 				// Divide the width by 100, Then to get the next number, divide the font size by 1% width.
 				// For example: 360 / 100 = 3.6. font-size: 36px / 3.6 = 10.
 				// So we use (var / 100) * 10 = the ratio to maintain.
@@ -77,32 +77,43 @@
 </head>
 <body>
 
+	<nav>
+		<a href="/us.html">Mission</a>
+	</nav>
+
 	<header>
-		<h1>Welcome to<br />tiny workshops<br />for curious coders</h1>
-		<h2>Next workshop:</h2>
+		<div class="wrap">
+			<h1>Welcome to<br /> tiny workshops</h1>
+			<h2>Next workshop:</h2>
+		</div>
 	</header>
 	
 	<section>
-		<h2 class="light">Getting <em>responsive</em> with <em>scss</em></h2>
+		<div class="wrap">
+			<h3 class="light"><em>Technically Speaking: </em><br />How scss helped me lose weight*</h3>
+			<p>* in my .css file</p>
+		</div>
 	</section>
 	
 	<footer>
-		<h2>Sign up for interest here ~</h2>
-
-		<div id="mc_embed_signup">
-			<form action="//yratof.us2.list-manage.com/subscribe/post?u=bf0119a54215fe939b0bd0ac9&amp;id=34e7edaab9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="fuckyeah@tinyworkshop.co" required>
-			    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-			    <div style="position: absolute; left: -5000px;">
-				    <input type="text" name="b_bf0119a54215fe939b0bd0ac9_34e7edaab9" tabindex="-1" value="">
-			    </div>
-			    <div class="clearfix">
-				    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-			    </div>
-			</form>
+		<div class="wrap">
+			<h2>Sign up for interest here ~</h2>
+	
+			<div id="mc_embed_signup">
+				<form action="//yratof.us2.list-manage.com/subscribe/post?u=bf0119a54215fe939b0bd0ac9&amp;id=34e7edaab9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="fuckyeah@tinyworkshop.co" required>
+				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;">
+					    <input type="text" name="b_bf0119a54215fe939b0bd0ac9_34e7edaab9" tabindex="-1" value="">
+				    </div>
+				    <div class="clearfix">
+					    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				    </div>
+				</form>
+			</div>
+	
+			<small>{Just press enter when you’ve done}</small>
 		</div>
-
-		<small>{Just press enter when you’ve done}</small>
 	</footer>
 	
 	<script>

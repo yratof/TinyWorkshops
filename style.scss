@@ -6,17 +6,33 @@ $yellow: #fdca30;
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 
 body{
 	background: $yellow;
+	font-size: 150%;
 }
 //////////////////////
 
-header, footer, section {
+.wrap {
+	
 	max-width: 1000px;
 	margin: 0 auto;
+}
+
+nav{
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	
+	
+	a{
+		color: black;
+	}
 }
 
 header, footer {
@@ -51,13 +67,19 @@ h1{
 	line-height: 1.2;
 }
 
-h2{
+h2, h3{
 	font-size: 4rem;
 	
-	em{
+	em, cite, a{
 		color: $yellow;
 		text-decoration: underline;
 	}
+}
+
+hr {
+	border: 0;
+	border-bottom: 10px solid black;
+	margin: 3rem auto;
 }
 
 
@@ -83,6 +105,7 @@ input[type=email]{
 
 input[type=submit]{
 	visibility: hidden;
+	display: none;
 }
 
 
@@ -92,12 +115,12 @@ input[type=submit]{
 ////////
 
 @media (max-width: 700px){
-	
+	nav{ font-size: 1rem;}
 	header h2 { bottom: -2.85rem;}
 	footer h2 { top: -2.75rem;}
-	
-	h1 { font-size: 2rem; line-height: 1.2; }
-	h2 { font-size: 1.5rem; }
+	body{ font-size: 100%;}
+	h1 { font-size: 1.75rem; line-height: 1.2; }
+	h2, h3 { font-size: 1.5rem; }
 	input[type=email]{width: 100%; top: 0; font-size: 1.15rem;}
 
 }

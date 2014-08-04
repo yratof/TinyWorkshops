@@ -1,13 +1,24 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-  background: #fdca30; }
+  background: #fdca30;
+  font-size: 150%; }
 
-header, footer, section {
+.wrap {
   max-width: 1000px;
   margin: 0 auto; }
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 1.5rem;
+  font-weight: 700; }
+  nav a {
+    color: black; }
 
 header, footer {
   background: #fdca30;
@@ -29,11 +40,16 @@ h1 {
   font-size: 5rem;
   line-height: 1.2; }
 
-h2 {
+h2, h3 {
   font-size: 4rem; }
-  h2 em {
+  h2 em, h2 cite, h2 a, h3 em, h3 cite, h3 a {
     color: #fdca30;
     text-decoration: underline; }
+
+hr {
+  border: 0;
+  border-bottom: 10px solid black;
+  margin: 3rem auto; }
 
 input[type=email] {
   font-family: "brandon-grotesque",sans-serif;
@@ -53,20 +69,27 @@ input[type=email] {
   box-sizing: border-box; }
 
 input[type=submit] {
-  visibility: hidden; }
+  visibility: hidden;
+  display: none; }
 
 @media (max-width: 700px) {
+  nav {
+    font-size: 1rem; }
+
   header h2 {
     bottom: -2.85rem; }
 
   footer h2 {
     top: -2.75rem; }
 
+  body {
+    font-size: 100%; }
+
   h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 1.2; }
 
-  h2 {
+  h2, h3 {
     font-size: 1.5rem; }
 
   input[type=email] {
