@@ -17,7 +17,11 @@ nav{
 	font-weight: 700;
 	
 	a{
-		color: black;
+    background: $white;
+    border-radius: 4px;
+    color: $black;
+    padding: 5px 12px;
+    text-transform: lowercase;
 	}
 }
 
@@ -72,6 +76,10 @@ hr {
 
 // INPUT
 
+input[type=email], input[type=submit]{
+	top: -2.5rem;
+}
+
 input[type=email]{
 	font-family: "brandon-grotesque",sans-serif;
 	font-weight: 500;
@@ -81,7 +89,7 @@ input[type=email]{
 	border-radius: 4px;
 	border: 10px solid black;
 	background: white;
-	box-shadow: -5px -5px 0 white;
+	box-shadow: -0.313rem -0.313rem 0 white;
 	padding: 10px 25px;
 	font-size: 1.5rem;
 	font-weight: 300;
@@ -99,7 +107,7 @@ input[type=submit]{
 	color: $white;
 	position: relative;
 	width: 170px;
-	box-shadow: -5px -5px 0 white;
+	box-shadow: -0.313rem -0.313rem 0 white;
 	border-radius: 4px;
 	padding: 19px 45px;
 	font-size: 1.5rem;
@@ -107,7 +115,6 @@ input[type=submit]{
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
-	top: 0px;
 	left: 0px;
 	@include transition (all 0.115s $ease-in-out-quart);
 	z-index: 5;
@@ -116,8 +123,8 @@ input[type=submit]{
 	&:active{
 		background: shade($yellow, 50%);
 		box-shadow: 0px 0px 0 white;
-		top: -5px;
-		left: -5px;
+		top: -2.813rem;
+		left: -0.313rem;
 	}
 	
 }
