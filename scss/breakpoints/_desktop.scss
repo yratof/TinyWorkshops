@@ -1,26 +1,13 @@
-//Colour
-$yellow: #fdca30;
+/* 
+	Desktop breakpoint.
+*/
 
-
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-
-body{
-	background: $yellow;
-	font-size: 150%;
-}
-//////////////////////
 
 .wrap {
-	
 	max-width: 1000px;
 	margin: 0 auto;
 }
+
 
 nav{
 	position: absolute;
@@ -28,7 +15,6 @@ nav{
 	right: 40px;
 	font-size: 1.5rem;
 	font-weight: 700;
-	
 	
 	a{
 		color: black;
@@ -82,13 +68,13 @@ hr {
 	margin: 3rem auto;
 }
 
+/*******************/
 
 // INPUT
 
 input[type=email]{
 	font-family: "brandon-grotesque",sans-serif;
 	font-weight: 500;
-	top: -2.5rem;
 	position: relative;
 	width: 60%;
 	max-width: 550px;
@@ -99,27 +85,41 @@ input[type=email]{
 	padding: 10px 25px;
 	font-size: 1.5rem;
 	font-weight: 300;
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 	box-sizing: border-box;
+	z-index: 10;
 }
 
 input[type=submit]{
-	visibility: hidden;
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight: 500;
+	background: $black;
+	border: 0;
+	color: $white;
+	position: relative;
+	width: 170px;
+	box-shadow: -5px -5px 0 white;
+	border-radius: 4px;
+	padding: 19px 45px;
+	font-size: 1.5rem;
+	font-weight: 300;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	top: 0px;
+	left: 0px;
+	@include transition (all 0.115s $ease-in-out-quart);
+	z-index: 5;
+	margin-left: 10px;
+	
+	&:active{
+		background: shade($yellow, 50%);
+		box-shadow: 0px 0px 0 white;
+		top: -5px;
+		left: -5px;
+	}
+	
 }
 
 
-
-
-
-////////
-
-@media (max-width: 700px){
-	nav{ font-size: 1rem;}
-	header h2 { bottom: -2.85rem;}
-	footer h2 { top: -2.75rem;}
-	body{ font-size: 100%;}
-	h1 { font-size: 1.75rem; line-height: 1.2; }
-	h2, h3 { font-size: 1.5rem; }
-	input[type=email]{width: 100%; top: 0; font-size: 1.15rem;}
-
-}

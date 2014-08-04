@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	background: $yellow;
+	font-size: 150%;
+}
+
+nav{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 1rem;
+	font-weight: 700;
+	
+	a{
+		color: black;
+	}
+}
+
+/* ---------------------------------- */
+/* ---------------------------------- */
+
+header, footer {
+	background: $yellow;
+	padding: 1rem;
+}
+
+section{
+	background: white;
+	padding: 2rem 1rem;
+}
+
+header{
+	h2{
+		position: relative;
+	}
+}
+
+footer{
+	h2{
+		position: relative;
+	}
+}
+
+/* ---------------------------------- */
+/* ---------------------------------- */
+
+
+h1 { font-size: 1.75rem; line-height: 1.2; }
+
+h2, h3 { font-size: 1.5rem; }
+
+
+
+/* ---------------------------------- */
+/* ---------------------------------- */
+
+
+input[type=email]{
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight: 500;
+	position: relative;
+	width: 60%;
+	border-radius: 4px;
+	border: 5px solid black;
+	background: white;
+	box-shadow: -3px -3px 0 white;
+	padding: 10px;
+	font-size: 1rem;
+	font-weight: 300;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	z-index: 10;
+}
+
+input[type=submit]{
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight: 500;
+	background: $black;
+	border: 0;
+	color: $white;
+	position: relative;
+	width: 34%;
+	box-shadow: -3px -3px 0 white;
+	border-radius: 4px;
+	padding: 13px 5px 14px;
+	font-size: 1rem;
+	font-weight: 300;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	top: 0px;
+	left: 0px;
+	@include transition (all 0.115s $ease-in-out-quart);
+	z-index: 5;
+	margin-left: 5px;
+	max-width: 130px;
+	
+	&:active{
+		background: shade($yellow, 50%);
+		box-shadow: 0px 0px 0 white;
+		top: -5px;
+		left: -5px;
+	}
+	
+}
+

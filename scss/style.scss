@@ -1,0 +1,29 @@
+//This is a lovely way of doing the
+//breakpoints. Piece of piss to sort 
+//them out & get them changed.
+
+$mobile:	30em;
+$tablet:	40em;
+$desktop:	50em;
+$cinema:	60em;
+
+// This is for the alcoholics.
+@import 'bourbon';
+
+// These are the colours that I use.
+@import "things/colours";
+
+//fucking, everything goes in here.
+@import "breakpoints/base";
+
+//mobiles and watches and google glass and all that shit.
+@media only screen and (min-width: $mobile) { @import "breakpoints/mobile"; }
+
+//tablets and phablets and thones?
+@media only screen and (min-width: $tablet) { @import "breakpoints/tablet"; }
+
+//desktop screens of the modern day
+@media only screen and (min-width: $desktop){ @import "breakpoints/desktop";}
+
+//fucking, super large screens.
+@media only screen and (min-width: $cinema) { @import "breakpoints/cinema"; }
