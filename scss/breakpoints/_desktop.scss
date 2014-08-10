@@ -114,8 +114,6 @@ input[type=submit]{
 	font-size: 1.5rem;
 	font-weight: 300;
 	display: inline-block;
-	vertical-align: top;
-	box-sizing: border-box;
 	left: 0px;
 	@include transition (all 0.115s $ease-in-out-quart);
 	z-index: 5;
