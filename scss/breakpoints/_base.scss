@@ -116,7 +116,7 @@ input[type=submit]{
 	font-weight: 300;
 	display: inline-block;
 	vertical-align: top;
-	box-sizing: border-box;
+	box-sizing: content-box;
 	top: 0px;
 	left: 0px;
 	@include transition (all 0.115s $ease-in-out-quart);
